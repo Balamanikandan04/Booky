@@ -7,7 +7,6 @@ import 'Screens/HomeScreen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
    await  Firebase.initializeApp();
     runApp(MyApp());
 
@@ -20,7 +19,7 @@ class MyApp extends StatelessWidget {
       create: (_) => ProductProvider(),
       child: MaterialApp(
         title: 'Booky App',
-        theme: ThemeData(primarySwatch: Colors.deepPurple),
+        theme: ThemeData(primarySwatch: Colors.indigo),
         home: HomeScreen(),
       ),
     );
